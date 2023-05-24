@@ -28,6 +28,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-chrisha1122-boutique-ado-evpygysplx.us2.codeanyapp.com']
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-chrisha1122-boutique-ado-evpygysplx.us2.codeanyapp.com',
+]
 
 # Application definition
 
@@ -42,7 +45,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'home'
+    'home',
+    'products',
 ]
 
 MIDDLEWARE = [
